@@ -1,3 +1,5 @@
+Author: Reva Tamboli
+
 Website: [Live Dashboard](https://weather-dashboard-7iza.onrender.com/)
 
 Overview:
