@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>🌡️ Live Temperature & Humidity Dashboard 🌡️</title>
+<style>
+body {
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: white;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px #000;
+}
+#cityInput {
+    padding: 10px;
+    font-size: 1em;
+    width: 200px;
+    margin-right: 10px;
+}
+#fetchBtn {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    background: #ff5722;
+    color: white;
+    border-radius: 5px;
+}
+#charts {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 50px;
+}
+canvas {
+    background: rgba(255,255,255,0.1);
+    border-radius: 15px;
+    padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<h1>🌡️ Live Temperature & Humidity Dashboard 🌡️</h1>
+
+<input type="text" id="cityInput" placeholder="Enter city name">
+<button id="fetchBtn">Check Weather</button>
+
+<div id="charts">
+    <div>
+        <p>Temperature: <span id="tempValue">--</span> °C</p>
+        <canvas id="tempChart" width="400" height="300"></canvas>
+        <p>Temperature (°C)</p>
+    </div>
+    <div>
+        <p>Humidity: <span id="humidityValue">--</span> %</p>
+        <canvas id="humidityChart" width="400" height="300"></canvas>
+        <p>Humidity (%)</p>
+    </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="/static/script.js"></script>
+
+</body>
+</html>
