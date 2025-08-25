@@ -13,3 +13,22 @@ Features
 3. Interactive line charts for temperature (°C) and humidity (%).
 
 4. Responsive design for desktop and tablet screens.
+
+Quick Start
+
+Clone the repository:
+
+git clone https://github.com/RevaTamboli/Weather-Dashboard.git
+
+
+Install dependencies:
+
+pip install -r requirements.txt
+
+
+Run the app locally:
+
+python app.py
+
+
+Open http://127.0.0.1:5000 in your browser
